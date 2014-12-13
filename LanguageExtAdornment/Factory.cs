@@ -16,6 +16,7 @@ namespace MasuqatNet.LanguageExtAdornment
 
 		public void TextViewCreated(IWpfTextView textView)
 		{
+			new TextAdornment(textView);
 		}
 	}
 }
