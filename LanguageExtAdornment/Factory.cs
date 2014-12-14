@@ -10,7 +10,7 @@ namespace MasuqatNet.LanguageExtAdornment
 	internal sealed class Factory : IWpfTextViewCreationListener
 	{
 		[Export(typeof(AdornmentLayerDefinition))]
-		[Name("LanguageExtAdornment")]
+		[Name(nameof(LanguageExtAdornment))]
 		[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
 		public AdornmentLayerDefinition editorAdornmentLayer = null;
 
